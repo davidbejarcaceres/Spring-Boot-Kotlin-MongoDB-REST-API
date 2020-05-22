@@ -11,3 +11,6 @@
 *.keystream
 *.at
 *.bin
+*.tab
+*.len
+*.tab

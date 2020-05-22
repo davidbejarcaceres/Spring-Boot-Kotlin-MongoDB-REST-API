@@ -30,7 +30,7 @@ class SwaggerConfig {
                 "1", "termsOfServiceUrl",
                 Contact(
                         "David Bejar Caceres",
-                        "Web Page",
+                        "https://www.linkedin.com/in/davidbejarcaceres/",
                         "dbc770@inlumine.ual.es"),
                 "GPL 2", "https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html",
                 Collections.emptyList())
