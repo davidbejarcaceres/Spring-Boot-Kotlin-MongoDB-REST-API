@@ -1,8 +1,10 @@
 package com.davidbejarcaceres.kotlinmongo
 
+import io.swagger.annotations.ApiOperation
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
+import kotlin.reflect.KClass
 
 @CrossOrigin(origins = ["*"]) //CORS security, Allows connecting to the API from external paths.
 @RestController
@@ -15,6 +17,7 @@ class PlayersController () {
     @GetMapping(produces = ["application/json"])
     fun getPlayers(): List<Players> = repositoryPlayers.findAll()
 
+    @ApiOperation(value = "Find Player by Id", response = Players::class)
     @GetMapping("/{id}", produces = ["application/json"])
     fun getPlayersById(@PathVariable("id") id : String): ResponseEntity<Players> = if (repositoryPlayers.findBy_id(id) != null)
         ResponseEntity.status(200).body(repositoryPlayers.findBy_id(id)) else ResponseEntity.status(404).body(null)

@@ -4,5 +4,10 @@
 *.class
 *.tab
 *.at
+/build
 *.len
 *.lock
+*.len
+*.keystream
+*.at
+*.bin
