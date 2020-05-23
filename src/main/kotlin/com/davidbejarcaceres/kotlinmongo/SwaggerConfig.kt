@@ -26,7 +26,7 @@ class SwaggerConfig {
 
     private fun apiInfo(): ApiInfo {
         return ApiInfo("Players API",
-                "Players Micro-Service, in Charge of players, CRUD operations on top of MongoDB with Feign capabilities.",
+                "Players Micro-Service, in Charge of players, CRUD operations on top of MongoDB",
                 "1", "termsOfServiceUrl",
                 Contact(
                         "David Bejar Caceres",
