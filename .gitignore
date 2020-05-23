@@ -14,3 +14,9 @@
 *.tab
 *.len
 *.tab
+
+.gradle/6.3/executionHistory/
+
+.gradle/6.3/fileHashes/
+
+*.tab_i
